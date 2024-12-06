@@ -11,7 +11,7 @@ function App() {
     <div class=" m-[20px]">
       <Navbar />
       <Routes>
-        <Route path="/about" element={<About />} />
+        <Route index path="/about" element={<About />} />
         <Route path="/people" element={<People />} />
       </Routes>
       <Footer />
