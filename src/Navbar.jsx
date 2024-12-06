@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router";
 import logo from "./assets/media/logoM.png";
 export default function Navbar() {
   const location = useLocation();
