@@ -3,7 +3,7 @@ import About from "./screens/About";
 import People from "./screens/People";
 import Footer from "./Footer";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 //test
 function App() {
   return (
