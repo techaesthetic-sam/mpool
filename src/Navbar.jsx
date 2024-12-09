@@ -32,7 +32,9 @@ export default function Navbar() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66] font-bold"
+            isActive
+              ? "font-bold text-[#1E1C1C]"
+              : "text-[#1E1C1C66] font-semibold"
           }
         >
           About
@@ -40,7 +42,9 @@ export default function Navbar() {
         <NavLink
           to="/people"
           className={({ isActive }) =>
-            isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66] font-bold"
+            isActive
+              ? "font-bold text-[#1E1C1C]"
+              : "text-[#1E1C1C66] font-semibold"
           }
         >
           People
