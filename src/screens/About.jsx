@@ -1,10 +1,11 @@
 import React from "react";
 import video from "../assets/media/video.mp4";
+import ImageSeries from "../Compnents/ImageSeries";
 export default function About() {
   return (
     <div className="">
       {/* changing height video is getting cropped */}
-      <video
+      {/* <video
         className="w-full h-[580px] rounded-[33px] object-cover"
         autoPlay
         muted
@@ -12,7 +13,8 @@ export default function About() {
       >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
+      <ImageSeries />
     </div>
   );
 }

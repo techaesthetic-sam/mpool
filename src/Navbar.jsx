@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink, useLocation } from "react-router";
 import logo from "./assets/media/logoM.png";
 export default function Navbar() {
-  const location = useLocation();
-  const isPeopleActive = location.pathname === "/people";
+  // const location = useLocation();
+  // const isPeopleActive = location.pathname === "/people";
 
   return (
     <div class="flex justify-between font-sans pb-5">
@@ -12,7 +12,7 @@ export default function Navbar() {
           <img src={logo} />
         </div>
         <div class="flex gap-1.5">
-          <span class="text-[#1E1C1C] font-bold text-[18px] ">
+          <span class="text-[#1E1C1C] font-semibold text-[18px] ">
             Available on
           </span>
 
@@ -22,21 +22,15 @@ export default function Navbar() {
         </div>
         <div class="">
           <h5 className="text-[#9A9A9A] text-[18px] font-bold">
-            {isPeopleActive ? (
-              <div class="h-[34px] w-[89px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
-                Beta
-              </div>
-            ) : (
-              <div class="h-[34px] w-[149px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
-                Launching Jan
-              </div>
-            )}
+            <div class="h-[34px] w-[149px] bg-[#EDEAEA] rounded-[17px] flex justify-center items-center  ">
+              Launching Jan
+            </div>
           </h5>
         </div>
       </div>
       <div class="flex gap-8 items-center">
         <NavLink
-          to="/about"
+          to="/"
           className={({ isActive }) =>
             isActive ? "font-bold text-[#1E1C1C]" : "text-[#1E1C1C66] font-bold"
           }
@@ -52,7 +46,7 @@ export default function Navbar() {
           People
         </NavLink>
         <div class="h-[34px] w-[108px] bg-[#1E1C1C] rounded-[9px] flex items-center justify-center ">
-          <h5 class="text-[#FFFFFF] text-[18px] font-bold">Download</h5>
+          <h5 class="text-[#FFFFFF] text-[18px] font-weight-600">Download</h5>
         </div>
       </div>
     </div>
